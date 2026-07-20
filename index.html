@@ -13,11 +13,48 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Oliver Schönauer | Externí provozní partner pro gastronomii</title>
-  <meta name="description" content="Pomáhám gastro provozům odhalovat, kde zbytečně přicházejí o peníze. Inventury, provozní data, náklady, skladové hospodářství a finanční administrativa.">
+  <meta name="description" content="Pomáhám majitelům gastro provozů zjistit, kde jim zbytečně odcházejí peníze — a co s tím udělat. Inventury, provozní data, náklady, skladové hospodářství a finanční administrativa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .hero-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .hero-copy {
+      max-width: 980px;
+    }
+    .hero h1 {
+      max-width: 950px;
+    }
+    .consultation-inline {
+      margin-top: 64px;
+      padding: 42px;
+      background: #000000;
+      color: #ffffff;
+      border-left: 6px solid #f2c602;
+    }
+    .consultation-inline .section-label {
+      color: #f2c602;
+    }
+    .consultation-inline p {
+      max-width: 780px;
+      color: rgba(255,255,255,.76);
+    }
+    .consultation-benefits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 28px;
+      margin: 26px 0 30px;
+      font-weight: 700;
+    }
+    @media (max-width: 700px) {
+      .consultation-inline {
+        padding: 28px 22px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -38,18 +75,15 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="kicker">Externí provozní partner pro gastronomii</p>
-          <h1>Pomáhám gastro provozům odhalovat, kde zbytečně přicházejí o peníze.</h1>
+          <h1>Pomáhám majitelům gastro provozů zjistit, kde jim zbytečně odcházejí peníze — a co s tím udělat.</h1>
           <p class="lead">Inventury · Provozní data · Náklady · Skladové hospodářství · Finanční administrativa</p>
-          <p class="lead services-line">Nejsem další náklad vašeho podniku. Mým cílem je, aby se moje práce stala investicí, která se vrátí.</p>
+          <p class="lead services-line">Moje práce má smysl pouze tehdy, když provozu přinese vyšší hodnotu, než kolik stojí.</p>
           <div class="actions">
-            <a class="btn primary" href="#consultation">Nezávazná konzultace zdarma</a>
+            <a class="btn primary" href="#consultation">Úvodní konzultace problému zdarma</a>
             <a class="btn ghost" href="#services">Co řeším</a>
           </div>
         </div>
 
-        <figure class="portrait">
-          <img src="assets/oliver-bar.jpg" alt="Oliver Schönauer za barem">
-        </figure>
       </div>
     </section>
 
@@ -63,9 +97,9 @@
         <div class="article-text">
           <p>Peníze často odcházejí desítkami drobných chyb, které se opakují každý den. Špatně nastavené procesy, nevyhodnocené inventury, nepřesná data, zbytečné mzdové náklady nebo chyby při práci se skladem.</p>
 
-          <p>Každá z těchto věcí sama o sobě nemusí působit dramaticky. Dohromady ale mohou představovat významné finanční ztráty, zbytečné hodiny práce a provozní stres.</p>
+          <p>Každá z těchto věcí sama o sobě nemusí působit dramaticky. Dohromady ale mohou znamenat významné finanční ztráty, desítky hodin zbytečné práce a situaci, kdy majitel neví, zda může provozním číslům skutečně věřit.</p>
 
-          <p>Právě jejich hledáním, vyhodnocováním a postupným odstraňováním se zabývám. Nejde mi o to vytvořit další report do šuplíku. Cílem je dát majiteli nebo provoznímu podklady, podle kterých může dělat lepší rozhodnutí.</p>
+          <p>Pomáhám tato místa identifikovat, vyhodnotit jejich dopad a nastavit další postup. Výsledkem nemá být další tabulka do archivu, ale lepší kontrola nákladů, použitelnější data a jasnější rozhodování.</p>
         </div>
       </div>
     </section>
@@ -92,7 +126,7 @@
 
           <p>Dnes se věnuji především inventurním reportům, analýze mank, skladovému hospodářství, provozním datům a finanční administrativě. Součástí mojí práce je také školení zaměstnanců v oblasti pokladního systému a souvisejících administrativních procesů.</p>
 
-          <p>Dlouhodobě věřím, že nejlepší řešení nevznikají podle univerzální šablony, ale pochopením konkrétního provozu. Každý podnik funguje jinak, řeší jiné problémy a používá jiné procesy. Právě proto mě baví poznávat nové provozy, hledat souvislosti a společně nastavovat systémy, které dávají smysl právě jim.</p>
+          <p>Nejlepší řešení podle mě nevznikají podle univerzální šablony, ale pochopením konkrétního provozu. Každý podnik funguje jinak, řeší jiné problémy a používá jiné procesy. Proto nejprve zjišťuji, co se skutečně děje, a teprve potom navrhuji systém, který dává smysl právě danému podniku.</p>
         </div>
       </div>
     </section>
@@ -162,17 +196,17 @@
         </div>
 
         <div id="consultation" class="consultation-inline">
-          <p class="section-label">Nezávazná konzultace</p>
-          <h3>Nejste si jistí, jestli jsem ten pravý člověk?</h3>
-          <p>To je úplně normální. Proto nabízím 30minutovou konzultaci zdarma.</p>
-          <p>Během ní společně projdeme váš provoz, řeknete mi, co vás trápí, a já popíšu, na co bych se při spolupráci zaměřil jako první.</p>
-          <p>Pokud usoudím, že vám moje služby nepřinesou vyšší hodnotu, než kolik by stály, řeknu vám to na rovinu. Nechci prodávat spolupráci za každou cenu.</p>
+          <p class="section-label">Úvodní konzultace problému zdarma</p>
+          <h3>Začněme konkrétním problémem vašeho provozu.</h3>
+          <p>Úvodní rozhovor není placený audit ani obecná obchodní prezentace. Je to prostor, ve kterém mi popíšete konkrétní problém a já vám řeknu, na co bych se zaměřil jako první.</p>
+          <p>Podle situace může proběhnout online, telefonicky nebo osobně u kávy v Praze. Pokud bude potřeba detailnější analýza, domluvíme její rozsah, očekávaný výstup a cenu předem.</p>
+          <p>Pokud usoudím, že moje práce pravděpodobně nepřinese odpovídající hodnotu, řeknu vám to otevřeně. Nechci prodávat spolupráci za každou cenu.</p>
           <div class="consultation-benefits">
-            <span>✓ 30 minut zdarma</span>
+            <span>✓ úvodní konzultace problému zdarma</span>
             <span>✓ bez závazků</span>
-            <span>✓ online nebo osobně v Praze</span>
+            <span>✓ online, telefonicky nebo osobně v Praze</span>
           </div>
-          <a class="btn primary" href="tel:+420606376166">Domluvit konzultaci</a>
+          <a class="btn primary" href="tel:+420606376166">Probrat konkrétní problém</a>
         </div>
       </div>
     </section>
@@ -206,24 +240,24 @@
       <div class="wrap">
         <p class="section-label">Ceny</p>
         <h2>Orientační ceny</h2>
-        <p class="pricing-intro dark">Konkrétní nabídka záleží na velikosti provozu, rozsahu práce a tom, jestli jde o jednorázový problém nebo dlouhodobou spolupráci.</p>
+        <p class="pricing-intro dark">Po úvodní konzultaci vždy předem vymezím rozsah práce, očekávaný výstup a cenu. Níže uvedené částky slouží pouze jako orientace.</p>
 
         <div class="price-list">
           <div>
             <strong>Úvodní konzultace</strong>
-            <span>zdarma / 30 minut</span>
+            <span>zdarma</span>
           </div>
           <div>
             <strong>Provozní audit</strong>
-            <span>od 4 900 Kč</span>
+            <span>od 5 000 Kč</span>
           </div>
           <div>
             <strong>Inventurní audit</strong>
-            <span>od 5 900 Kč</span>
+            <span>od 6 000 Kč</span>
           </div>
           <div>
             <strong>Nastavení skladového hospodářství</strong>
-            <span>od 7 900 Kč</span>
+            <span>od 8 000 Kč</span>
           </div>
           <div>
             <strong>Školení práce s pokladním systémem</strong>
@@ -235,7 +269,7 @@
           </div>
           <div>
             <strong>Dlouhodobá spolupráce</strong>
-            <span>od 9 900 Kč / měsíc</span>
+            <span>od 10 000 Kč / měsíc</span>
           </div>
         </div>
       </div>
@@ -245,10 +279,10 @@
       <div class="wrap contact-grid">
         <div>
           <p class="section-label">Kontakt</p>
-          <h2>Zajímá vás, kolik peněz zbytečně odchází z vašeho provozu?</h2>
+          <h2>Máte v provozu problém, který se opakuje, ale čísla vám neříkají proč?</h2>
         </div>
         <div class="contact-card">
-          <p>Nejlepší začátek je krátká nezávazná konzultace. Společně zjistíme, jestli vám dokážu pomoct.</p>
+          <p>Začněme krátkým popisem konkrétní situace. Řeknu vám, jak bych k ní přistoupil a zda podle mě dává další spolupráce smysl.</p>
           <a href="mailto:oliverschonauer07@gmail.com">oliverschonauer07@gmail.com</a>
           <a href="tel:+420606376166">606 376 166</a>
           <span>Praha a okolí</span>
