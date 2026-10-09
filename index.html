@@ -1,169 +1,102 @@
 <!doctype html>
 <html lang="cs">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRHSR17YYY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-VRHSR17YYY');
-  </script>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172923">
   <title>Oliver Schönauer | Externí provozní partner pro gastronomii</title>
-  <meta name="description" content="Pomáhám majitelům gastro provozů zjistit, kde jim zbytečně odcházejí peníze — a co s tím udělat. Inventury, provozní data, náklady, skladové hospodářství a finanční administrativa.">
+  <meta name="description" content="Pomáhám kavárnám, barům a restauracím lépe řídit náklady, sklad, personál a provozní data. Inventury, POS audit, marže a automatizace administrativy.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:title" content="Oliver Schönauer | Provozní partner pro gastronomii">
+  <meta property="og:description" content="Kontrola nákladů, efektivnější provoz a méně administrativy pro gastro podniky.">
+  <meta property="og:url" content="https://oliverschonauer.cz/">
+  <link rel="canonical" href="https://oliverschonauer.cz/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    .hero-grid {
-      grid-template-columns: 1fr !important;
-    }
-    .hero-copy {
-      max-width: 980px;
-    }
-    .hero h1 {
-      max-width: 950px;
-    }
-    .consultation-inline {
-      margin-top: 64px;
-      padding: 42px;
-      background: #000000;
-      color: #ffffff;
-      border-left: 6px solid #f2c602;
-    }
-    .consultation-inline .section-label {
-      color: #f2c602;
-    }
-    .consultation-inline p {
-      max-width: 780px;
-      color: rgba(255,255,255,.76);
-    }
-    .consultation-benefits {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px 28px;
-      margin: 26px 0 30px;
-      font-weight: 700;
-    }
+    /* Doplňkové styly pro nové bloky; zbytek vzhledu zůstává ve style.css. */
+    .hero-grid { grid-template-columns: 1fr !important; }
+    .hero-copy { max-width: 980px; }
+    .hero h1 { max-width: 950px; }
+    .hero .lead { max-width: 780px; }
+    .consultation-inline { margin-top: 56px; padding: 42px; background: #172923; color: #fff; border-left: 5px solid #c9a96a; }
+    .consultation-inline .section-label { color: #c9a96a; }
+    .consultation-inline p { max-width: 780px; color: rgba(255,255,255,.78); }
+    .consultation-benefits { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 24px 0 28px; font-weight: 600; }
+    .service-list details { scroll-margin-top: 90px; }
+    .service-list details p { max-width: 850px; }
+    .service-output { font-size: .95em; opacity: .82; }
+    .sample-note { padding: 22px 24px; border: 1px solid rgba(23,41,35,.18); margin-top: 28px; }
+    .sample-note p:last-child { margin-bottom: 0; }
+    .contact-form { display: grid; gap: 14px; margin-top: 24px; }
+    .contact-form label { display: block; font-weight: 600; margin-bottom: 6px; }
+    .contact-form input, .contact-form select, .contact-form textarea { box-sizing: border-box; width: 100%; padding: 12px 14px; border: 1px solid rgba(23,41,35,.25); border-radius: 2px; background: #fff; color: #172923; font: inherit; }
+    .contact-form textarea { min-height: 120px; resize: vertical; }
+    .contact-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .small-print { font-size: .85rem; opacity: .72; }
+    .section-intro { max-width: 820px; }
     @media (max-width: 700px) {
-      .consultation-inline {
-        padding: 28px 22px;
-      }
+      .consultation-inline { padding: 28px 22px; }
+      .contact-form .form-row { grid-template-columns: 1fr; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Oliver Schönauer – provozní poradenství pro gastronomii",
+    "url": "https://oliverschonauer.cz/",
+    "email": "oliverschonauer07@gmail.com",
+    "telephone": "+420606376166",
+    "areaServed": { "@type": "AdministrativeArea", "name": "Praha a okolí" },
+    "description": "Provozní poradenství pro gastronomické podniky: inventury, skladové hospodářství, POS audit, náklady a automatizace reportingu."
+  }
+  </script>
 </head>
-
 <body>
   <header class="topbar">
     <div class="wrap nav">
-      <a class="logo" href="#">Oliver Schönauer</a>
-      <nav>
-        <a href="#why">Proč to dělám</a>
-        <a href="#thinking">Jak přemýšlím</a>
+      <a class="logo" href="#top" aria-label="Oliver Schönauer – úvod">Oliver Schönauer</a>
+      <nav aria-label="Hlavní navigace">
         <a href="#services">Služby</a>
+        <a href="#process">Spolupráce</a>
+        <a href="#about">O mně</a>
+        <a href="#pricing">Ceny</a>
         <a href="#contact">Kontakt</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="kicker">Externí provozní partner pro gastronomii</p>
-          <h1>Pomáhám majitelům gastro provozů zjistit, kde jim zbytečně odcházejí peníze — a co s tím udělat.</h1>
-          <p class="lead">Inventury · Provozní data · Náklady · Skladové hospodářství · Finanční administrativa</p>
-          <p class="lead services-line">Moje práce má smysl pouze tehdy, když provozu přinese vyšší hodnotu, než kolik stojí.</p>
+          <h1>Váš gastro provoz. Pod kontrolou.</h1>
+          <p class="lead">Pomáhám kavárnám, barům a restauracím lépe řídit náklady, sklad, personál a provozní data — od inventur a cenotvorby až po audit pokladního systému a automatizaci administrativy.</p>
+          <p class="lead services-line">Cílem je méně zbytečné práce, spolehlivější data a lepší rozhodování. Moje práce má smysl pouze tehdy, když provozu přinese vyšší hodnotu, než kolik stojí.</p>
           <div class="actions">
-            <a class="btn primary" href="#consultation">Úvodní konzultace problému zdarma</a>
-            <a class="btn ghost" href="#services">Co řeším</a>
+            <a class="btn primary" href="#contact">Probrat problém zdarma</a>
+            <a class="btn ghost" href="#services">Prohlédnout služby</a>
           </div>
+          <p class="small-print">Úvodní konzultace zdarma · Bez závazků · Praha a okolí</p>
         </div>
-
       </div>
     </section>
 
     <section class="about">
       <div class="wrap about-grid">
         <aside>
-          <p class="section-label">Proč si mě podniky najímají</p>
+          <p class="section-label">Kde vznikají ztráty</p>
           <h2>Většina provozů neztrácí peníze jednou velkou chybou.</h2>
         </aside>
-
         <div class="article-text">
-          <p>Peníze často odcházejí desítkami drobných chyb, které se opakují každý den. Špatně nastavené procesy, nevyhodnocené inventury, nepřesná data, zbytečné mzdové náklady nebo chyby při práci se skladem.</p>
-
-          <p>Každá z těchto věcí sama o sobě nemusí působit dramaticky. Dohromady ale mohou znamenat významné finanční ztráty, desítky hodin zbytečné práce a situaci, kdy majitel neví, zda může provozním číslům skutečně věřit.</p>
-
-          <p>Pomáhám tato místa identifikovat, vyhodnotit jejich dopad a nastavit další postup. Výsledkem nemá být další tabulka do archivu, ale lepší kontrola nákladů, použitelnější data a jasnější rozhodování.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="why" class="about continuation">
-      <div class="wrap about-grid">
-        <aside>
-          <p class="section-label">Proč dělám to, co dělám</p>
-          <h2>Nejdřív jsem počítal inventury. Postupně jsem začal hledat souvislosti.</h2>
-        </aside>
-
-        <div class="article-text">
-          <p>Do gastronomie jsem vstoupil jako barista. Brzy jsem ale zjistil, že mě mnohem víc než samotná práce za barem baví to, co se děje na pozadí každého dobře fungujícího provozu.</p>
-
-          <p>Příležitost přišla ve chvíli, kdy jsem se nabídl, že převezmu inventury. Z původně jednoduché pomoci se postupně stala odpovědnost za jejich pravidelné vyhodnocování a následně i za další oblasti provozu.</p>
-
-          <p>S rostoucí odpovědností jsem se začal věnovat skladovému hospodářství, pokladnímu systému, evidenci faktur a finanční administrativě. Právě tehdy jsem zjistil, že samotná čísla jsou jen začátek. Skutečnou hodnotu získávají až ve chvíli, kdy se mezi nimi začnou hledat souvislosti.</p>
-
-          <p>Během přibližně šesti týdnů jsem postupně převzal každodenní správu pokladního systému, skladového hospodářství i finanční administrativy. Ne proto, že bych měl dlouholeté zkušenosti, ale protože jsem se rychle učil, práce mě bavila a výsledky byly vidět.</p>
-
-          <p>Nejvíc mě ale naučilo období, kdy jsem pomáhal napravovat dlouhodobě nahromaděné chyby v administrativě, skladovém hospodářství a provozních procesech. Právě tehdy jsem pochopil, že většina problémů v gastronomii nevzniká kvůli lidem. Vzniká proto, že některý z procesů není správně nastavený nebo mu dlouhodobě nikdo nevěnuje dostatečnou pozornost.</p>
-
-          <p>V té době jsem zároveň studoval Business Management v rámci programu International Baccalaureate, což mi umožnilo průběžně porovnávat teoretické principy řízení s každodenním fungováním reálného provozu.</p>
-
-          <p>Dnes se věnuji především inventurním reportům, analýze mank, skladovému hospodářství, provozním datům a finanční administrativě. Součástí mojí práce je také školení zaměstnanců v oblasti pokladního systému a souvisejících administrativních procesů.</p>
-
-          <p>Nejlepší řešení podle mě nevznikají podle univerzální šablony, ale pochopením konkrétního provozu. Každý podnik funguje jinak, řeší jiné problémy a používá jiné procesy. Proto nejprve zjišťuji, co se skutečně děje, a teprve potom navrhuji systém, který dává smysl právě danému podniku.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="manifesto">
-      <div class="wrap">
-        <div class="quote-row">
-          <span>Nejdřív se snažím pochopit, proč problém vzniká.</span>
-          <strong>Teprve potom navrhuji jeho řešení.</strong>
-        </div>
-        <div class="quote-row">
-          <span>Když se objeví vysoké manko, nehledám viníka.</span>
-          <strong>Hledám příčinu.</strong>
-        </div>
-        <div class="quote-row">
-          <span>Když podnik vydělává méně, než by mohl, nezačnu doporučovat zdražení.</span>
-          <strong>Nejdřív hledám, kudy odchází peníze.</strong>
-        </div>
-      </div>
-    </section>
-
-    <section id="thinking" class="thinking">
-      <div class="wrap">
-        <p class="section-label">Jak přemýšlím</p>
-        <div class="thinking-grid">
-          <div>
-            <h3>Data jsou začátek. Ne konec.</h3>
-            <p>Samotná čísla většinou nestačí. Důležité je pochopit, jak vznikla a co znamenají v reálném provozu.</p>
-          </div>
-          <div>
-            <h3>Inventura není cíl. Je to nástroj.</h3>
-            <p>Dobrá inventura nekončí spočítáním skladu. Tam teprve začíná práce s příčinami.</p>
-          </div>
-          <div>
-            <h3>Neptám se kdo. Ptám se proč.</h3>
-            <p>Chyby v provozu často nejsou problémem lidí, ale systému, ve kterém pracují.</p>
-          </div>
+          <p>Peníze a čas často odcházejí po malých částech: nepřesnou evidencí, nevyhodnocenými inventurami, špatně nastavenými recepturami, nevhodným rozložením směn nebo administrativou, kterou by šlo zjednodušit.</p>
+          <p>Jednotlivé problémy nemusí na první pohled působit zásadně. V součtu ale mohou znamenat zbytečné náklady a nejistotu, zda se můžete na provozní čísla spolehnout.</p>
+          <p>Pomáhám zjistit, co se skutečně děje, vyhodnotit dopad a navrhnout konkrétní další kroky. Výsledkem nemá být další tabulka do archivu, ale informace, podle kterých lze jednat.</p>
         </div>
       </div>
     </section>
@@ -171,106 +104,123 @@
     <section id="services" class="services">
       <div class="wrap">
         <p class="section-label">Služby</p>
-        <h2>S čím vám pomůžu</h2>
-
+        <h2>Co můžeme zlepšit ve vašem provozu</h2>
+        <p class="section-intro">Rozsah vždy přizpůsobuji velikosti podniku, dostupným datům a konkrétnímu problému. Můžeme začít jednorázovým auditem nebo se domluvit na průběžné spolupráci.</p>
         <div class="service-list">
           <details open>
-            <summary>Inventurní reporty</summary>
-            <p>Pravidelné vyhodnocení inventur, rozdělení problémových kategorií, komentář k výsledkům a doporučení priorit na další období. Cílem není pouze zjistit rozdíl, ale vytvořit podklad, podle kterého se dá v provozu rozhodovat.</p>
+            <summary>Inventury a skladové hospodářství</summary>
+            <p>Nastavení inventurního postupu, pravidelné vyhodnocování rozdílů, identifikace problémových položek a kategorizace mank. Podle možností systému lze propojit prodeje, skladové pohyby a digitální receptury.</p>
+            <p class="service-output"><strong>Možný výstup:</strong> inventurní report, seznam nejvýznamnějších odchylek a doporučení, co prověřit jako první.</p>
           </details>
-
           <details>
-            <summary>Provozní audit</summary>
-            <p>Praktická kontrola fungování provozu, administrativy, skladových procesů, práce s daty, nákladů a míst, kde podnik zbytečně ztrácí peníze. Součástí může být analýza mank, mzdových nákladů, produktového mixu nebo otevírací doby.</p>
+            <summary>Audit pokladního systému (POS)</summary>
+            <p>Prověřím nastavení produktů a kategorií, dostupné reporty, exporty, skladové funkce a místa, kde systém nebo způsob práce vytváří zbytečnou administrativu. U vlastního řešení posoudím dostupné funkce a rizika; doporučení na změnu systému má smysl až po vyhodnocení potřeb a nákladů.</p>
+            <p class="service-output"><strong>Možný výstup:</strong> seznam nedostatků, rizik a prioritních úprav včetně doporučení, co řešit hned a co může počkat.</p>
           </details>
-
           <details>
-            <summary>Dlouhodobá spolupráce</summary>
-            <p>Pravidelná podpora provozu, inventurní reporting, sledování mank, kontrola skladového hospodářství, finanční administrativa, nastavování procesů a průběžné řešení problémů dřív, než se z nich stanou krize.</p>
+            <summary>Marže, cenotvorba a dodavatelé</summary>
+            <p>Analýza nákupních a prodejních cen, nákladovosti produktů, receptur a skladby sortimentu. Mohu také pomoci s porovnáním dodavatelských nabídek a přípravou na vyjednávání o podmínkách.</p>
+            <p class="service-output"><strong>Možný výstup:</strong> přehled nákladovosti a marží, vytipované položky k prověření a návrhy dalších kroků.</p>
           </details>
-
           <details>
-            <summary>Krizové výjezdy</summary>
-            <p>Rychlá pomoc při náhlém manku, nesouladu ve skladu, problému s uzávěrkou nebo situaci, kterou nechcete řešit sami. Cílem je najít příčinu, navrhnout další postup a zabránit opakování stejného problému.</p>
+            <summary>Reporting a provozní data</summary>
+            <p>Připravuji přehledy tržeb, nákladů, skladových rozdílů a dalších dostupných ukazatelů. Pokud to zdrojová data a používané systémy dovolí, lze opakované reporty automatizovat a omezit ruční přepisování.</p>
+            <p class="service-output"><strong>Možný výstup:</strong> pravidelný report nebo dashboard přizpůsobený rozhodnutím, která majitel potřebuje dělat.</p>
+          </details>
+          <details>
+            <summary>Plánování směn a personální náklady</summary>
+            <p>Na základě dostupných prodejních dat, otevírací doby a personálních možností navrhnu vhodnější obsazení směn. U některých provozů lze připravit také automatizovaný model plánování podle dostupnosti a typu pracovních vztahů.</p>
+            <p class="service-output"><strong>Možný výstup:</strong> doporučené obsazení podle časů a dnů, případně upravitelný rozpis směn.</p>
+          </details>
+          <details>
+            <summary>Receptury, provozní standardy a školení</summary>
+            <p>Nastavení digitálních receptur a návaznosti na skladové hospodářství, příprava kontrolních seznamů a školení zaměstnanců v práci s pokladnou, penězi, evidencí a přípravou kávy či dalších nápojů.</p>
+            <p class="service-output"><strong>Možný výstup:</strong> přehledné pracovní postupy, receptury a sjednocený způsob provádění vybraných úkolů.</p>
+          </details>
+          <details>
+            <summary>Dlouhodobá provozní podpora</summary>
+            <p>Pravidelné vyhodnocování výsledků, kontrola dohodnutých ukazatelů, aktualizace reportů a pomoc s prioritami. Rozsah a frekvenci spolupráce stanovíme předem, aby bylo jasné, co je součástí paušálu.</p>
           </details>
         </div>
-
-        <div id="consultation" class="consultation-inline">
-          <p class="section-label">Úvodní konzultace problému zdarma</p>
+        <div class="consultation-inline" id="consultation">
+          <p class="section-label">První krok</p>
           <h3>Začněme konkrétním problémem vašeho provozu.</h3>
-          <p>Úvodní rozhovor není placený audit ani obecná obchodní prezentace. Je to prostor, ve kterém mi popíšete konkrétní problém a já vám řeknu, na co bych se zaměřil jako první.</p>
-          <p>Podle situace může proběhnout online, telefonicky nebo osobně u kávy v Praze. Pokud bude potřeba detailnější analýza, domluvíme její rozsah, očekávaný výstup a cenu předem.</p>
-          <p>Pokud usoudím, že moje práce pravděpodobně nepřinese odpovídající hodnotu, řeknu vám to otevřeně. Nechci prodávat spolupráci za každou cenu.</p>
+          <p>Popište mi, co potřebujete vyřešit. V úvodním rozhovoru probereme situaci a já vám řeknu, na co bych se zaměřil jako první. Nejde o placený audit ani závazek ke spolupráci.</p>
+          <p>Pokud bude potřeba podrobnější analýza, předem si vymezíme rozsah, očekávaný výstup, cenu a potřebné podklady. Pokud nevidím realistickou možnost přinést odpovídající hodnotu, řeknu to otevřeně.</p>
           <div class="consultation-benefits">
-            <span>✓ úvodní konzultace problému zdarma</span>
-            <span>✓ bez závazků</span>
-            <span>✓ online, telefonicky nebo osobně v Praze</span>
+            <span>✓ Úvodní konzultace zdarma</span>
+            <span>✓ Bez závazků</span>
+            <span>✓ Online, telefonicky nebo osobně v Praze</span>
           </div>
-          <a class="btn primary" href="tel:+420606376166">Probrat konkrétní problém</a>
+          <a class="btn primary" href="#contact">Popsat svůj problém</a>
         </div>
       </div>
     </section>
 
-    <section class="pricing" id="cooperation">
+    <section id="process" class="pricing">
       <div class="wrap">
         <p class="section-label">Spolupráce</p>
-        <h2>Jak probíhá spolupráce</h2>
-        <p class="pricing-intro">Každý podnik funguje jinak. Proto spolupráce nezačíná hotovým řešením, ale pochopením konkrétního provozu.</p>
-
+        <h2>Od problému ke konkrétním krokům</h2>
+        <p class="pricing-intro">Nezačínáme hotovým řešením. Nejdřív potřebuji pochopit provoz a ověřit, jaká data jsou k dispozici.</p>
         <div class="pricing-grid detailed">
           <article>
             <h3>1. Poznáme se</h3>
-            <p class="package-purpose">Nejdříve si společně sedneme nebo zavoláme. Popíšete mi svůj provoz, co vás trápí a čeho chcete dosáhnout.</p>
+            <p class="package-purpose">Popíšete mi provoz, co vás trápí a čeho chcete dosáhnout. Společně ověříme, zda je moje pomoc vhodná.</p>
           </article>
-
           <article class="highlight">
-            <h3>2. Analyzuji data</h3>
-            <p class="package-purpose">Projdu dostupné podklady, inventury, sklad, náklady nebo samotný provoz a určím, na co se zaměřím jako první.</p>
+            <h3>2. Prověřím podklady</h3>
+            <p class="package-purpose">Podle domluveného rozsahu projdu dostupná data, inventury, sklad, náklady nebo procesy. Pokud data nestačí, řeknu, co je potřeba doplnit.</p>
           </article>
-
           <article>
-            <h3>3. Navrhnu řešení</h3>
-            <p class="package-purpose">Připravím konkrétní kroky podle priorit. Co má největší dopad, co řešit hned a co může počkat.</p>
+            <h3>3. Dostanete doporučení</h3>
+            <p class="package-purpose">Předám konkrétní závěry a priority. Implementaci, automatizaci nebo pravidelnou podporu domluvíme zvlášť podle potřeby.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="single-prices">
+    <section class="single-prices" id="pricing">
       <div class="wrap">
         <p class="section-label">Ceny</p>
         <h2>Orientační ceny</h2>
-        <p class="pricing-intro dark">Po úvodní konzultaci vždy předem vymezím rozsah práce, očekávaný výstup a cenu. Níže uvedené částky slouží pouze jako orientace.</p>
-
+        <p class="pricing-intro dark">Cena závisí na velikosti provozu, rozsahu dat a požadovaném výstupu. Před zahájením práce vždy potvrdíme rozsah a cenu. Uvedené částky jsou orientační výchozí ceny, nikoli závazná nabídka pro každý projekt.</p>
         <div class="price-list">
-          <div>
-            <strong>Úvodní konzultace</strong>
-            <span>zdarma</span>
-          </div>
-          <div>
-            <strong>Provozní audit</strong>
-            <span>od 5 000 Kč</span>
-          </div>
-          <div>
-            <strong>Inventurní audit</strong>
-            <span>od 6 000 Kč</span>
-          </div>
-          <div>
-            <strong>Nastavení skladového hospodářství</strong>
-            <span>od 8 000 Kč</span>
-          </div>
-          <div>
-            <strong>Školení práce s pokladním systémem</strong>
-            <span>od 4 500 Kč</span>
-          </div>
-          <div>
-            <strong>Krizový výjezd</strong>
-            <span>od 3 500 Kč + doprava</span>
-          </div>
-          <div>
-            <strong>Dlouhodobá spolupráce</strong>
-            <span>od 10 000 Kč / měsíc</span>
-          </div>
+          <div><strong>Úvodní konzultace</strong><span>zdarma</span></div>
+          <div><strong>Provozní audit</strong><span>od 5 000 Kč</span></div>
+          <div><strong>Inventurní audit</strong><span>od 6 000 Kč</span></div>
+          <div><strong>Nastavení skladového hospodářství</strong><span>od 8 000 Kč</span></div>
+          <div><strong>Audit pokladního systému</strong><span>cena dle rozsahu</span></div>
+          <div><strong>Reporting a automatizace</strong><span>cena dle rozsahu</span></div>
+          <div><strong>Školení práce s pokladním systémem</strong><span>od 4 500 Kč</span></div>
+          <div><strong>Krizový výjezd</strong><span>od 3 500 Kč + doprava</span></div>
+          <div><strong>Dlouhodobá spolupráce</strong><span>od 10 000 Kč / měsíc</span></div>
+        </div>
+        <p class="small-print">Před objednáním si vždy potvrdíme, co je v ceně zahrnuto, jaké podklady budou potřeba a jaký výstup dostanete.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about continuation">
+      <div class="wrap about-grid">
+        <aside>
+          <p class="section-label">O mně</p>
+          <h2>Od práce za barem k hledání souvislostí v provozu.</h2>
+        </aside>
+        <div class="article-text">
+          <p>Do gastronomie jsem vstoupil jako barista. Postupně jsem převzal inventury a jejich vyhodnocování a začal se věnovat také skladovému hospodářství, pokladnímu systému, evidenci faktur a provozní administrativě.</p>
+          <p>Praktická zkušenost mě naučila, že čísla sama o sobě nestačí. Je potřeba rozumět tomu, jak vznikají, jak spolu souvisejí a co se za nimi děje v každodenním provozu. Právě proto hledám příčiny problémů v procesech a datech, ne automaticky viníka.</p>
+          <p>V té době jsem zároveň studoval Business Management v rámci programu International Baccalaureate a porovnával teoretické principy řízení s fungováním reálného podniku.</p>
+          <p>Nejprve se snažím pochopit konkrétní provoz a jeho omezení. Teprve potom doporučuji změny — takové, které dávají smysl právě danému podniku a které lze reálně zavést.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="thinking">
+      <div class="wrap">
+        <p class="section-label">Můj přístup</p>
+        <div class="thinking-grid">
+          <div><h3>Data jsou začátek. Ne konec.</h3><p>Důležité je pochopit, jak čísla vznikla a co znamenají v reálném provozu.</p></div>
+          <div><h3>Inventura je nástroj.</h3><p>Rozdíl ve skladu je signál k prověření, ne sám o sobě vysvětlení problému.</p></div>
+          <div><h3>Hledám příčinu.</h3><p>Dobře nastavený proces má lidem práci usnadnit a pomáhat předcházet opakovaným chybám.</p></div>
         </div>
       </div>
     </section>
@@ -279,13 +229,36 @@
       <div class="wrap contact-grid">
         <div>
           <p class="section-label">Kontakt</p>
-          <h2>Máte v provozu problém, který se opakuje, ale čísla vám neříkají proč?</h2>
+          <h2>Co ve vašem provozu potřebujete vyřešit?</h2>
+          <p>Stačí stručně popsat situaci. Ozvu se vám a probereme, zda a jak vám mohu pomoci.</p>
         </div>
         <div class="contact-card">
-          <p>Začněme krátkým popisem konkrétní situace. Řeknu vám, jak bych k ní přistoupil a zda podle mě dává další spolupráce smysl.</p>
+          <p><strong>Oliver Schönauer</strong><br>Externí provozní partner pro gastronomii</p>
           <a href="mailto:oliverschonauer07@gmail.com">oliverschonauer07@gmail.com</a>
           <a href="tel:+420606376166">606 376 166</a>
           <span>Praha a okolí</span>
+          <form class="contact-form" action="mailto:oliverschonauer07@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div><label for="name">Jméno</label><input id="name" name="Jméno" autocomplete="name" required></div>
+              <div><label for="business">Podnik</label><input id="business" name="Podnik" autocomplete="organization"></div>
+            </div>
+            <div><label for="email">E-mail</label><input id="email" name="E-mail" type="email" autocomplete="email" required></div>
+            <div><label for="topic">S čím potřebujete pomoct?</label>
+              <select id="topic" name="Oblast">
+                <option value="">Vyberte oblast (nepovinné)</option>
+                <option>Inventury a sklad</option>
+                <option>POS systém</option>
+                <option>Marže a dodavatelé</option>
+                <option>Reporting a automatizace</option>
+                <option>Plánování směn</option>
+                <option>Provozní audit</option>
+                <option>Jiné</option>
+              </select>
+            </div>
+            <div><label for="message">Stručný popis situace</label><textarea id="message" name="Zpráva" placeholder="Co se děje a co byste potřebovali vyřešit?" required></textarea></div>
+            <button class="btn primary" type="submit">Připravit e-mail</button>
+            <p class="small-print">Formulář otevře váš e-mailový program s připravenou zprávou; neodesílá data přímo z webu.</p>
+          </form>
         </div>
       </div>
     </section>
@@ -295,8 +268,8 @@
     <div class="wrap footer">
       <span>© 2026 Oliver Schönauer</span>
       <span>Externí provozní partner pro gastronomii</span>
+      <a href="mailto:oliverschonauer07@gmail.com">Kontakt</a>
     </div>
   </footer>
-
 </body>
 </html>
